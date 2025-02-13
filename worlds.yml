@@ -1,0 +1,63 @@
+worlds:
+  localhost:
+    number: 69
+    host: "127.0.0.1"
+    port: 43594
+    activity: "Near-Reality Local Host"
+    private: false
+    visibility: DEVELOPER
+    verifyPasswords: false
+    location: NETHERLANDS
+    logback: "logback-dev"
+    types:
+      - MEMBERS
+    api:
+      enabled: false
+      scheme: "http"
+      host: "0.0.0.0"
+      port: 8080
+      token: "REPLACE_WITH_TOKEN"
+  beta:
+    number: 2
+    host: "beta.near-reality.com"
+    port: 43594
+    activity: "Near-Reality Beta"
+    private: false
+    visibility: BETA
+    verifyPasswords: false
+    location: UNITED_STATES_OF_AMERICA
+    logback: "logback-beta"
+    types:
+      - MEMBERS
+  main:
+    number: 1
+    host: "127.0.0.1"
+    port: 43594
+    activity: "Near-Reality"
+    private: false
+    visibility: PUBLIC
+    verifyPasswords: true
+    location: UNITED_STATES_OF_AMERICA
+    logback: "logback-live"
+    types:
+      - MEMBERS
+    api:
+      enabled: true
+      scheme: "http"
+      host: "localhost"
+      port: 8080
+      token: "555M6DFG165SDFG613SDFG"
+    logsDatabase:
+      enabled: true
+      databaseUrl: "jdbc:postgresql://localhost"
+      databasePort: 5433
+      databaseName: "rsps_game"
+      databaseUser: "postgres"
+      databasePassword: "Tank2020"
+    mainDatabase:
+      enabled: true
+      databaseUrl: "jdbc:postgresql://localhost"
+      databasePort: 5433
+      databaseName: "rsps_game"
+      databaseUser: "postgres"
+      databasePassword: "Tank2020"
