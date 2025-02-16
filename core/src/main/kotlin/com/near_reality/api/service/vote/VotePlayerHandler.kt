@@ -43,7 +43,7 @@ object VotePlayerHandler {
                     VoteSite.RUNELOCUS -> url {
                         protocol = URLProtocol.HTTPS
                         host = "www.runelocus.com"
-                        path("top-rsps-list/near-reality-is-back/vote")
+                        path("top-rsps-list/ecoscape-2/vote/")
                         parameters.append("callback", user.id.toString())
                     }
                     VoteSite.RSPS_LIST -> url {
@@ -128,13 +128,13 @@ object VotePlayerHandler {
             !APIClient.enabled -> player.notify("You cannot vote on this world.", schedule = false)
             !VoteAPIService.enabled -> player.notify( "The voting service is currently unavailable.", schedule = false)
             World.isUpdating() -> player.notify("You cannot vote while the world is updating.", schedule = false)
-            else -> {
+            /*else -> {
                 val user = player.user
                 if (user != null)
                     action(user)
                 else
-                    player.notify("You must be logged in to vote.", schedule = false)
+                    player.notify("You must be logged in to vote.", schedule = false)*/
             }
         }
     }
-}
+

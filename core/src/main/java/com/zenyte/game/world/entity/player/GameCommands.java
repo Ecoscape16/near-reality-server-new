@@ -2565,7 +2565,8 @@ public final class GameCommands {
             GameNoticeboardInterface.showStaffOnline(p);
         });
         new Command(PlayerPrivilege.PLAYER, new String[]{"vote", "voting"}, (p, args) -> {
-            GameInterface.VOTE.open(p);
+            p.getPacketDispatcher().sendURL("https://eco-scape.org/Vote");
+            // GameInterface.VOTE.open(p);
         });
         new Command(PlayerPrivilege.PLAYER, new String[]{"store", "donate"}, (p, args) -> {
             GameInterface.CREDIT_STORE.open(p);

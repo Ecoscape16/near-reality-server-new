@@ -29,6 +29,27 @@ worlds:
     logback: "logback-beta"
     types:
       - MEMBERS
+    api:
+      enabled: true
+      scheme: "http"
+      host: "localhost"
+      port: 8080
+      token: "555M6DFG165SDFG613SDFG"
+    logsDatabase:
+      enabled: true
+      databaseUrl: "jdbc:postgresql://localhost"
+      databasePort: 5433
+      databaseName: "rsps_game"
+      databaseUser: "post
+      gres"
+      databasePassword: "Tank2020"
+    mainDatabase:
+      enabled: true
+      databaseUrl: "jdbc:postgresql://localhost"
+      databasePort: 5433
+      databaseName: "rsps_game"
+      databaseUser: "postgres"
+      databasePassword: "Tank2020"
   main:
     number: 1
     host: "127.0.0.1"
@@ -52,7 +73,8 @@ worlds:
       databaseUrl: "jdbc:postgresql://localhost"
       databasePort: 5433
       databaseName: "rsps_game"
-      databaseUser: "postgres"
+      databaseUser: "post
+      gres"
       databasePassword: "Tank2020"
     mainDatabase:
       enabled: true
