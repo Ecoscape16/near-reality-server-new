@@ -6,7 +6,7 @@ import com.near_reality.game.content.crystal.recipes.chargeable.CrystalWeapon
 import com.near_reality.game.item.CustomItemId
 import com.near_reality.game.world.entity.player.action.combat.AmmunitionDefinition
 import com.near_reality.game.world.entity.player.action.combat.ISpecialAttack
-import com.near_reality.game.world.entity.player.action.combat.ranged.GodBowCombat
+//import com.near_reality.game.world.entity.player.action.combat.ranged.GodBowCombat
 import com.zenyte.game.content.godwars.npcs.KreeArra
 import com.zenyte.game.task.WorldTasksManager
 import com.zenyte.game.util.Utils
@@ -84,7 +84,7 @@ sealed class GodBow(
             0
     }
 
-    fun createCombat(target: Entity) = GodBowCombat(target, this)
+    //fun createCombat(target: Entity) = GodBowCombat(target, this)
 
     object Saradomin : GodBow(
         itemId = CustomItemId.SARADOMIN_BOW,
@@ -213,4 +213,4 @@ sealed class GodBow(
         else
             KreeArra.TORNADO_HIT_SOUND)
     }
-}*/
+} */

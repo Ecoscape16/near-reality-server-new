@@ -40,8 +40,7 @@ worlds:
       databaseUrl: "jdbc:postgresql://localhost"
       databasePort: 5433
       databaseName: "rsps_game"
-      databaseUser: "post
-      gres"
+      databaseUser: "postgres"
       databasePassword: "Tank2020"
     mainDatabase:
       enabled: true
