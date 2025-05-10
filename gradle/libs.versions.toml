@@ -106,7 +106,7 @@ google-gson = { module = "com.google.code.gson:gson", version = "2.12.1" }
 openhft-affinity = { module = "net.openhft:affinity", version = "3.27ea0" }
 openhft-chronicle-threads = { module = "net.openhft:chronicle-threads", version = "2.27ea0" }
 
-clikt = { module = "com.github.ajalt.clikt:clikt", version = "5.0.2" }
+clikt = { module = "com.github.ajalt.clikt:clikt", version = "5.0.3" }
 kotlinpoet = { module = "com.squareup:kotlinpoet", version = "2.0.0" }
 jsoup = { module = "org.jsoup:jsoup", version = "1.18.3" }
 kryo = { module = "com.esotericsoftware:kryo", version = "5.6.2" }
